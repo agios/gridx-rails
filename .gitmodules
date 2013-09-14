@@ -1,0 +1,3 @@
+[submodule "gridx"]
+	path = gridx
+	url = https://github.com/oria/gridx.git
