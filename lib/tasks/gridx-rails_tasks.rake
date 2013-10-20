@@ -27,7 +27,7 @@ def target_path path
       "app/assets/stylesheets/"
     when '.png', '.gif', '.bmp'
       "app/assets/images/"
-    when '.md', '.txt'
+    when '.md', '.txt', '.less'
       nil
     else
       puts "Ignoring file: #{path}"

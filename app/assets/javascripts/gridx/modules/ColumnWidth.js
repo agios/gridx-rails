@@ -2,7 +2,8 @@ define([
 	"dojo/_base/declare",
 	"dojo/_base/array",
 	"dojo/_base/Deferred",
-	"dojo/query",
+	// "dojo/query",
+	'gridx/support/query',
 	"dojo/_base/sniff",
 	"dojo/dom-geometry",
 	"dojo/dom-class",
@@ -315,6 +316,8 @@ define([
 				g.tree._initExpandLevel();
 			}
 			g.body.refresh();
+			//Now header and body are matched, so we can fire onRender.
+			g.header.onRender();
 		}
 	});
 });
